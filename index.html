@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/36d5c4f503.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <title>pepsi</title>
+</head>
+
+<body>
+  <section>
+    <header>
+      <a href="#"><img src="asset/images/logo.png" alt="brand-logo"></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">products</a>
+          </li>
+          <li>
+            <a href="#">what's new</a>
+          </li>
+          <li>
+            <a href="#">newsletter</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="content-left">
+        <h1>That's what<br><span>I like</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem laudantium distinctio quas. Porro debitis similique illo, ullam perspiciatis libero rerum architecto iste omnis, eius officiis eos nobis quaerat. Vero, voluptatibus.</p>
+        <a href="#">view all products</a>
+      </div>
+      <div class="content-right">
+        <img src="asset/images/pepsi001.png" class="product" alt="product-image">
+      </div>
+    </div>
+
+    <div class="social">
+      <ul>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+    </div>
+
+    <div class="change">
+      <a href="#"><img src="asset/images/pepsi001.png" onclick="changeProduct('asset/images/pepsi001.png') ;" alt="product"></a>
+      <a href="#"><img src="asset/images/pepsi002.png" onclick="changeProduct('asset/images/pepsi002.png') ;" alt="product"></a>
+      <a href="#"><img src="asset/images/pepsi003.png" onclick="changeProduct('asset/images/pepsi003.png') ;" alt="product"></a>
+
+    </div>
+  </section>  
+
+  <script>
+    function changeProduct(source){
+      document.querySelector(".product").src = source;
+    }
+  </script>
+</body>
+
+</html>
